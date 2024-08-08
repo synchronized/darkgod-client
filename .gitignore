@@ -51,6 +51,8 @@ Thumbs.db
 
 /Assets/StreamingAssets/
 /Assets/StreamingAssets.meta
-/Assets/QFrameworkData/
-/Assets/QFrameworkData.meta
 
+#//////////////////////////
+# YooAsset output directory
+#//////////////////////////
+/Bundles

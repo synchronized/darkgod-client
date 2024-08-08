@@ -15,24 +15,6 @@ public static class LuaConst
     public const string MD5FileName = "files.txt";
     public const string ExtName = ".zip";//用.u3d容易被服务器MIME限制
 
-    public static string streamPathUrl
-    {
-        get
-        {
-            string path = "file:///" + Application.dataPath + "/StreamingAssets";
-            switch (Application.platform)
-            {
-                case RuntimePlatform.Android:
-                    path = "jar:file://" + Application.dataPath + "!/assets/";
-                    break;
-                case RuntimePlatform.IPhonePlayer:
-                    path = "file:///" + Application.dataPath + "/Raw/";
-                    break;
-            }
-            return path;
-        }
-    }
-
 #if UNITY_STANDALONE
     public static string osDir = "Win";
 #elif UNITY_ANDROID
